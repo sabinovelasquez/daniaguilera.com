@@ -1,11 +1,13 @@
 <template lang='pug'>
-  header.container(v-sticky='{zIndex: 99, stickyTop: 1}')
-    nav
+  header(v-sticky='{zIndex: 99, stickyTop: 1}')
+    nav.container
       ul
         li
           a(href='#') Link
 </template>
+
 <style lang='scss'>
+@import '../styles/header.scss';
 </style>
 
 <script>

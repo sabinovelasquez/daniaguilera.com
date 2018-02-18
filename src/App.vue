@@ -23,7 +23,15 @@ export default {
   }
 }
 </script>
+
 <style lang='scss'>
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'styles/main.scss';
+@import 'styles/fonts.scss';
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4,h5, h6{
+  font-family: 'Playfair Display', serif;
+}
 </style>
