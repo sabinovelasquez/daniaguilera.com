@@ -1,28 +1,22 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template lang='pug'>
+  <div id='app'>
+    <main-header></main-header>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/Header'
 export default {
   name: 'app',
+  created: () => {
+    console.log('running with env')
+    console.log(process.env)
+  },
   components: {
-    HelloWorld
+    'main-header': Header
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang='scss'>
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'styles/main.scss';
 </style>
