@@ -1,5 +1,5 @@
 <template lang='pug'>
-  header.container
+  header.container(v-sticky='{zIndex: 99, stickyTop: 1}')
     nav
       ul
         li
@@ -9,7 +9,11 @@
 </style>
 
 <script>
+import VueSticky from 'vue-sticky'
 export default {
-  name: 'Header'
+  name: 'Header',
+  directives: {
+    'sticky': VueSticky,
+  }
 }
 </script>
