@@ -15,7 +15,7 @@ import VueSticky from 'vue-sticky'
 export default {
   name: 'Header',
   directives: {
-    'sticky': VueSticky,
+    'sticky': VueSticky
   }
 }
 </script>

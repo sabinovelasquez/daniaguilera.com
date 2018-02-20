@@ -1,13 +1,12 @@
 <template lang='pug'>
   <div id='app'>
     <main-header></main-header>
-    <main-grid></main-grid>
+    <router-view></router-view>
     <main-footer></main-footer>
   </div>
 </template>
 <script>
 import Header from './components/Header'
-import Grid from './components/Grid'
 import Footer from './components/Footer'
 
 export default {
@@ -18,7 +17,6 @@ export default {
   },
   components: {
     'main-header': Header,
-    'main-grid': Grid,
     'main-footer': Footer
   }
 }
