@@ -4,30 +4,46 @@ header {
   font-family: "Playfair Display", serif;
 
   background-color: $primary;
+  background-image: url("../assets/da-lettering.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
   .nav {
+    line-height: 150px;
+    width: 100%;
     ul {
       font-family: Roboto Slab;
       font-size: 12px;
       font-weight: 700;
-      font-style: normal;
 
-      display: block;
-      float: left;
-      letter-spacing: 0px;
-      letter-spacing: .1em;
-      line-height: 1em;
-      line-height: 2em;
-      margin: 0 0 0 35px;
-      max-width: 49%;
-      padding: 35px 0 25px 0;
+      margin: 0;
+      padding: 0;
+      width: 40%;
 
+      &.left {
+        float: left;
+        li {
+          float: right;
+        }
+      }
+      &.right {
+        float: right;
+        li {
+          float: left;
+        }
+      }
       li {
-        display: inline-block;
-        margin: 0 1.5em 10px 0;
+        list-style: none;
         text-transform: uppercase;
+        &.logo {
+          float: left;
+          img {
+            height: 150px;
+            width: 150px;
+          }
+        }
         a {
           color: darken($primary, 30);
-          &.router-link-exact-active{
+          &.router-link-exact-active {
             color: $secondary;
           }
         }

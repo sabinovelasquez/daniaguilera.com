@@ -1,10 +1,11 @@
 <template lang='pug'>
-  nav.nav
-    ul
-      li
-        router-link(to='/') Home
-      li
-        router-link(to='/detail') Detalle
+nav.nav
+  ul.left
+    li
+      router-link(to='/') Home
+  ul.right
+    li
+      router-link(to='/detail') Detalle
 </template>
 
 <style lang='scss'>
