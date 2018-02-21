@@ -1,7 +1,6 @@
 <template lang='pug'>
-  footer
-    .container
-      p Footer
+.container
+  p Footer
 </template>
 
 <style lang='scss'>

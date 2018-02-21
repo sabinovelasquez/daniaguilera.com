@@ -1,9 +1,11 @@
 <template lang='pug'>
-  <div id='app'>
-    <main-header></main-header>
-    <router-view></router-view>
-    <main-footer></main-footer>
-  </div>
+  el-container#app
+    el-header(height='150px')
+      main-header
+    el-main
+      router-view
+    el-footer
+      main-footer
 </template>
 <script>
 import Header from './components/Header'

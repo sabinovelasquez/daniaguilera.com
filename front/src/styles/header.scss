@@ -4,8 +4,7 @@ header {
   font-family: "Playfair Display", serif;
 
   background-color: $primary;
-  min-height: 150px;
-  nav {
+  .nav {
     ul {
       font-family: Roboto Slab;
       font-size: 12px;
@@ -27,7 +26,10 @@ header {
         margin: 0 1.5em 10px 0;
         text-transform: uppercase;
         a {
-          color: white;
+          color: darken($primary, 30);
+          &.router-link-exact-active{
+            color: $secondary;
+          }
         }
       }
     }

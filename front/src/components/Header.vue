@@ -1,9 +1,10 @@
 <template lang='pug'>
-  header(v-sticky='{zIndex: 99, stickyTop: 1}')
-    nav.container
-      ul
-        li
-          a(href='#') Link
+  nav.nav
+    ul
+      li
+        router-link(to='/') Home
+      li
+        router-link(to='/detail') Detalle
 </template>
 
 <style lang='scss'>
