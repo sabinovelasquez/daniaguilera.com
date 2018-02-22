@@ -1,4 +1,22 @@
 @import "colors.scss";
 
-.grid {
+.grid{
+  margin:10px;
+}
+.item{
+  padding: 10px 0 10px;
+}
+.loading{
+  text-align: center;
+  i{
+    font-size: 20px;
+    color: $secondary;
+  }
+}
+.content {
+  height: 100%;
+  background-color: #F3F3F3;
+  .responsive{
+    width:100%;
+  }
 }
