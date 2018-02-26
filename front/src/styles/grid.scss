@@ -14,9 +14,23 @@
   }
 }
 .content {
+  position: relative;
   height: 100%;
   background-color: #F3F3F3;
   .responsive{
     width:100%;
+  }
+  .hover{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $secondary, $alpha: .5);
+    h2.title{
+      text-align: center;
+    }
+    &:hover{
+      opacity: 1;
+    }
   }
 }
