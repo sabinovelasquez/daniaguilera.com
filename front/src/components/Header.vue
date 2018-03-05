@@ -10,15 +10,6 @@ nav.nav
     el-col.align-center.logo(:span='8')
       img(src='../assets/da-lettering.svg', alt='Dani Aguilera Lettering')
     el-col(:span='8')
-  //- ul.left
-  //-   li
-  //-     router-link(to='/') Home
-  //- ul.center
-  //-   li
-  //-     img(src='../assets/da-lettering.svg', alt='Dani Aguilera Lettering')
-  //- ul.right
-  //-   li
-  //-     router-link(to='/detail') Detalle
 </template>
 
 <style lang='scss'>

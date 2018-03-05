@@ -1,16 +1,35 @@
 <template lang='pug'>
-.detail
-  p {{msg}}
-
+el-row.detail
+  el-col.desc(:xs='24', :sm='12')
+    p id: {{this.$route.params.id}}
+  el-col(:xs='24', :sm='12')
+    .photoset(v-for='item in items', :key='item.id')
+      .content
+        img.cover(v-bind:src='item.url_o')
 </template>
 
 <script>
+import Vue from 'vue'
+import VueResource from 'vue-resource'
+
+const flickrAPIURL = 'https://api.flickr.com/services/rest/'
+const flickrAPIId = '126002e4a8a2ff46f1288402eb3387df'
+const extras = 'machine_tags,url_m,url_o'
+Vue.use(VueResource)
+
 export default {
   name: 'Detail',
   data () {
     return {
-      msg: 'API: https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=a19c9cb205c47bd896d25d53598a1057&photoset_id=72157677454619445&user_id=135003973%40N07&per_page=900&format=json&nojsoncallback=1'
+      items: null
     }
+  },
+  mounted () {
+    this.$http.get(`${flickrAPIURL}?method=flickr.photosets.getPhotos&api_key=${flickrAPIId}&photoset_id=${this.$route.params.id}&extras=${extras}&format=json&nojsoncallback=1`).then(response => {
+      this.items = response.body.photoset.photo
+    }, error => {
+      console.error(error)
+    })
   }
 }
 </script>

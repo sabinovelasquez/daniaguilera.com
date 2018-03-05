@@ -1,5 +1,7 @@
 @import "colors.scss";
 
 .detail {
-  color: red;
+  img{
+    max-width: 100%;
+  }
 }
