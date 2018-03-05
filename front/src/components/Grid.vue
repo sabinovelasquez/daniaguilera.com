@@ -25,7 +25,7 @@ import { VueMasonryPlugin } from 'vue-masonry'
 import VueResource from 'vue-resource'
 const flickrAPIURL = 'https://api.flickr.com/services/rest/'
 const flickrAPIId = '126002e4a8a2ff46f1288402eb3387df'
-const flickrAPIUserId = '135003973@N07'
+const flickrAPIUserId = '162934785@N05'
 const extras = 'machine_tags,url_m'
 Vue.use(VueResource)
 Vue.use(VueMasonryPlugin)
