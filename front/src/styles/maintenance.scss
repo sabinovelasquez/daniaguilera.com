@@ -1,0 +1,29 @@
+@import "colors.scss";
+
+.maintenance {
+  margin:0;
+  padding: 0;
+  background-color: $primary;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  .logo{
+    position: absolute;
+    width:30%;
+    left:50%;
+    margin-left: -15%;
+    img{
+      width: 100%;
+    }
+  }
+  .social{
+    svg{
+      margin:20px;
+    }
+  }
+}
+header, footer{
+  display: none;
+}
