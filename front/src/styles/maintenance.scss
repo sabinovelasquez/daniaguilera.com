@@ -1,12 +1,14 @@
 @import "colors.scss";
 
+body{
+  background-color: $primary;
+}
 .maintenance {
   margin:0;
   padding: 0;
-  background-color: $primary;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: absolute!important;
   top:0;
   left:0;
   .logo{
@@ -19,8 +21,24 @@
     }
   }
   .social{
+    width:100%;
+    margin-top: -20px;
+    text-align: center;
+    a{
+      color: black;
+      &:hover{
+        color: black;
+      }
+    }
     svg{
       margin:20px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 160%;
+      margin-left: -30%;
+      svg{
+        margin: 10px;
+      }
     }
   }
 }

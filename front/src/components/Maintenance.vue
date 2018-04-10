@@ -2,11 +2,14 @@
 el-row.maintenance
   .logo
     img(src='../assets/da-lettering.svg', alt='Dani Aguilera Lettering')
-  .social
-    icon(name='brands/facebook-f', scale='1.5')
-    icon(name='brands/instagram', scale='1.5')
-    icon(name='brands/google-plus-g', scale='1.5')
-    icon(name='brands/pinterest', scale='1.5')
+    .social
+      a(href='https://www.facebook.com/Da.lettering/', target='_blank')
+        icon(name='brands/facebook-f', scale='1.5')
+      a(href='https://www.instagram.com/da_lettering', target='_blank')
+        icon(name='brands/instagram', scale='1.5')
+      a(href='https://www.instagram.com/da_lettering', target='_blank')
+        icon(name='brands/google-plus-g', scale='1.5')
+      icon(name='brands/pinterest', scale='1.5')
 </template>
 
 <script>
