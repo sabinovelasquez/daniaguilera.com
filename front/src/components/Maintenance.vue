@@ -7,9 +7,8 @@ el-row.maintenance
         icon(name='brands/facebook-f', scale='1.5')
       a(href='https://www.instagram.com/da_lettering', target='_blank')
         icon(name='brands/instagram', scale='1.5')
-      a(href='https://www.instagram.com/da_lettering', target='_blank')
-        icon(name='brands/google-plus-g', scale='1.5')
-      icon(name='brands/pinterest', scale='1.5')
+      a(href='mailto:da.lettering@gmail.com')
+        icon(name='envelope', scale='1.5')
 </template>
 
 <script>
@@ -18,8 +17,7 @@ import VueResource from 'vue-resource'
 
 import 'vue-awesome/icons/brands/facebook-f'
 import 'vue-awesome/icons/brands/instagram'
-import 'vue-awesome/icons/brands/google-plus-g'
-import 'vue-awesome/icons/brands/pinterest'
+import 'vue-awesome/icons/envelope'
 import Icon from 'vue-awesome/components/Icon'
 
 Vue.use(VueResource)
