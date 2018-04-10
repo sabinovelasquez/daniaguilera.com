@@ -1,0 +1,49 @@
+@import "colors.scss";
+@import "functions.scss";
+
+body{
+  background-color: $primary;
+}
+.maintenance {
+  margin:0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute!important;
+  top:0;
+  left:0;
+  .logo{
+    position: absolute;
+    width:30%;
+    left:50%;
+    margin-left: -15%;
+    img{
+      width: 100%;
+    }
+  }
+  .social{
+    width:100%;
+    margin-top: -20px;
+    text-align: center;
+    a{
+      @include transition(color .3s ease);
+      color: #27283a;
+      &:hover{
+        color: $secondary;
+      }
+    }
+    svg{
+      margin:20px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 160%;
+      margin-left: -30%;
+      svg{
+        margin: 10px;
+      }
+    }
+  }
+}
+header, footer{
+  display: none;
+}
