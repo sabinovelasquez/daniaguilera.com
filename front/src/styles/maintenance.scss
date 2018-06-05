@@ -1,0 +1,20 @@
+@import "colors.scss";
+@import "functions.scss";
+
+.maintenance {
+  .logo{
+    max-width: 150px;
+  }
+  .social{
+    max-width: 300px;
+    margin: auto;
+    a.rrss{
+      @include transition(color .3s ease);
+      color:#27283a!important;
+      &:hover{
+        color: $secondary!important;
+      }
+    }
+  }
+}
+
