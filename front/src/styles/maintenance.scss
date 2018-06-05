@@ -1,29 +1,20 @@
 @import "colors.scss";
+@import "functions.scss";
 
 .maintenance {
-  margin:0;
-  padding: 0;
-  background-color: $primary;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top:0;
-  left:0;
   .logo{
-    position: absolute;
-    width:30%;
-    left:50%;
-    margin-left: -15%;
-    img{
-      width: 100%;
-    }
+    max-width: 150px;
   }
   .social{
-    svg{
-      margin:20px;
+    max-width: 300px;
+    margin: auto;
+    a.rrss{
+      @include transition(color .3s ease);
+      color:#27283a!important;
+      &:hover{
+        color: $secondary!important;
+      }
     }
   }
 }
-header, footer{
-  display: none;
-}
+
