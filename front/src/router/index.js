@@ -14,12 +14,12 @@ export default new Router({
       component: Detail
     },
     {
-      path: '/grid/',
+      path: '/',
       name: 'Grid',
       component: Grid
     },
     {
-      path: '/',
+      path: '/maintenance',
       name: 'Maintenance',
       component: Maintenance
     }
